@@ -24,6 +24,7 @@ and notes about any quirks or limitations:
    resend
    scaleway
    sendgrid
+   sendora
    sparkpost
    unisender_go
 

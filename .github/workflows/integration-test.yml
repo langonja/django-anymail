@@ -55,6 +55,7 @@ jobs:
           - { tox: django60-py314-resend, python: "3.14" }
           - { tox: django60-py314-scaleway, python: "3.14" }
           - { tox: django60-py314-sendgrid, python: "3.14" }
+          - { tox: django60-py314-sendora, python: "3.14" }
           - { tox: django60-py314-sparkpost, python: "3.14" }
           - { tox: django60-py314-unisender_go, python: "3.14" }
 
@@ -113,6 +114,9 @@ jobs:
           ANYMAIL_TEST_SENDGRID_API_KEY: ${{ secrets.ANYMAIL_TEST_SENDGRID_API_KEY }}
           ANYMAIL_TEST_SENDGRID_DOMAIN: ${{ vars.ANYMAIL_TEST_SENDGRID_DOMAIN }}
           ANYMAIL_TEST_SENDGRID_TEMPLATE_ID: ${{ secrets.ANYMAIL_TEST_SENDGRID_TEMPLATE_ID }}
+          ANYMAIL_TEST_SENDORA_API_KEY: ${{ secrets.ANYMAIL_TEST_SENDORA_API_KEY }}
+          ANYMAIL_TEST_SENDORA_DOMAIN: ${{ vars.ANYMAIL_TEST_SENDORA_DOMAIN }}
+          ANYMAIL_TEST_SENDORA_LIVE_API_KEY: ${{ secrets.ANYMAIL_TEST_SENDORA_LIVE_API_KEY }}
           ANYMAIL_TEST_SPARKPOST_API_KEY: ${{ secrets.ANYMAIL_TEST_SPARKPOST_API_KEY }}
           ANYMAIL_TEST_SPARKPOST_DOMAIN: ${{ secrets.ANYMAIL_TEST_SPARKPOST_DOMAIN }}
           ANYMAIL_TEST_UNISENDER_GO_API_KEY: ${{ secrets.ANYMAIL_TEST_UNISENDER_GO_API_KEY }}

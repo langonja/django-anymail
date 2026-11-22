@@ -30,6 +30,12 @@ vNext
 
 *Unreleased changes*
 
+Features
+~~~~~~~~
+
+* **Sendora:** Add support for this ESP.
+  (See `docs <https://anymail.dev/en/latest/esps/sendora/>`__.)
+
 Fixes
 ~~~~~
 

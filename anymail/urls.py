@@ -21,6 +21,7 @@ from .webhooks.sendinblue import (
     SendinBlueInboundWebhookView,
     SendinBlueTrackingWebhookView,
 )
+from .webhooks.sendora import SendoraInboundWebhookView, SendoraTrackingWebhookView
 from .webhooks.sparkpost import (
     SparkPostInboundWebhookView,
     SparkPostTrackingWebhookView,
@@ -83,6 +84,11 @@ urlpatterns = [
         "sendinblue/inbound/",
         SendinBlueInboundWebhookView.as_view(),
         name="sendinblue_inbound_webhook",
+    ),
+    path(
+        "sendora/inbound/",
+        SendoraInboundWebhookView.as_view(),
+        name="sendora_inbound_webhook",
     ),
     path(
         "sparkpost/inbound/",
@@ -149,6 +155,11 @@ urlpatterns = [
         "sendinblue/tracking/",
         SendinBlueTrackingWebhookView.as_view(),
         name="sendinblue_tracking_webhook",
+    ),
+    path(
+        "sendora/tracking/",
+        SendoraTrackingWebhookView.as_view(),
+        name="sendora_tracking_webhook",
     ),
     path(
         "sparkpost/tracking/",
